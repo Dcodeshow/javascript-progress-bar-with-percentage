@@ -80,28 +80,28 @@ p {
   text-align: center;
 }
 
-/**Sticky Header**/
-
 .header-wrp {
   background: #0069b3;
   position: relative;
   transition: 0.2s linear;
 }
 
-/****/
+/*******************Loader Code Start****************/
+
 .loader {
   background-color: #000;
   position: fixed;
   left: 0;
   width: 100%;
   height: 100vh;
+  top: 0;
   z-index: 10;
   display: flex;
   align-items: flex-end;
 }
 
 .progress-bar {
-  width: 0%;
+  width: 0;
   height: 200px;
   background: linear-gradient(40deg, rgb(109, 63, 152) 0%,
       rgb(176, 118, 179) 80%,
@@ -110,11 +110,9 @@ p {
   transition: 0.5s linear;
   display: flex;
   justify-content: flex-end;
-  /*Step 3*/
-  transform: translateY(0)
+  transform: translateY(0);
 }
 
-/**Step 2**/
 span.number-count {
   font-size: 130px;
   color: #fff;
@@ -122,13 +120,10 @@ span.number-count {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/*Step 3*/
-
 .height-0 {
   transform: translateY(100%);
 }
 
-/*Step 4*/
 .hide-loader {
   display: none;
 }
